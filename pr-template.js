@@ -6,19 +6,20 @@ javascript: (function () {
         })
         .then(function () {
             var toast = document.createElement('div');
-            toast.textContent = 'Template copied';
+            toast.innerHTML = `Template copied`;
             toast.style.position = 'fixed';
-            toast.style.top = '20px';
+            toast.style.top = '16px';
             toast.style.left = '50%';
             toast.style.transform = 'translateX(-50%)';
-            toast.style.background = '#fff';
-            toast.style.color = '#000';
-            toast.style.padding = '8px 16px';
-            toast.style.borderRadius = '6px';
-            toast.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
-            toast.style.fontSize = '14px';
-            toast.style.fontWeight = '500';
-            toast.style.textAlign = 'center';
+            toast.style.background = '#ffffff';
+            toast.style.color = '#3c4043';
+            toast.style.padding = '12px 16px';
+            toast.style.borderRadius = '8px';
+            toast.style.boxShadow = '0 2px 6px rgba(0,0,0,0.15)';
+            toast.style.fontSize = '13px';
+            toast.style.fontFamily = 'Roboto, system-ui, sans-serif';
+            toast.style.display = 'flex';
+            toast.style.alignItems = 'center';
             toast.style.zIndex = 9999;
             document.body.appendChild(toast);
 
