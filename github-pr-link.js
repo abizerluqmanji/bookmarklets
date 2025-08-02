@@ -4,17 +4,6 @@ javascript: (function () {
     var prTitle = document.querySelector('bdi.js-issue-title')?.textContent.trim() || '';
     var prUrl = window.location.href;
     var richLink = `[Pull Request ${prNumber}](${prUrl}): ${prTitle}`;
-    navigator.clipboard.writeText(richLink).then(function () {
-        alert('Rich link copied to clipboard!');
-    });
-})();
-
-javascript: (function () {
-    var match = window.location.pathname.match(/pull\/(\d+)/);
-    var prNumber = match ? match[1] : '';
-    var prTitle = document.querySelector('bdi.js-issue-title')?.textContent.trim() || '';
-    var prUrl = window.location.href;
-    var richLink = `[Pull Request ${prNumber}](${prUrl}): ${prTitle}`;
 
     navigator.clipboard.writeText(richLink).then(function () {
         var toast = document.createElement('div');
